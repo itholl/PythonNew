@@ -13,3 +13,63 @@
 1.post fromdata  url：http://act.ff.sdo.com/20180525HeroList/Server/HeroList190128.ashx   
 
 官方英雄榜查询 http://act.ff.sdo.com/20180525HeroList/index200305.html  
+
+
+
+## 接口名称
+
+### 1) 请求地址
+
+>http://act.ff.sdo.com/20180525HeroList/Server/HeroList190128.ashx
+
+### 2) 调用方式：HTTP post
+
+### 3) 接口描述：
+
+* 接口描述详情
+
+### 4) 请求参数:
+
+
+#### POST参数:
+|字段名称       |字段说明         |类型            |必填            |备注     |
+| -------------|:--------------:|:--------------:|:--------------:| ------:|
+|method||string|Y|-|
+|Stage||string|Y|-|
+|Name||string|Y|-|
+|AreaId||string|Y|-|
+|GroupId||string|Y|-|
+
+
+
+### 5) 请求返回结果:
+
+```
+{
+    "Code": 0,
+    "Message": "成功",
+    "Attach": {
+        "Level1": 20191224,
+        "Level2": 20191224,
+        "Level3": 20191225,
+        "Level4": 20191226,
+        "Fpercent": 
+    },
+    "Success": true
+}
+```
+
+
+### 6) 请求返回结果参数说明:
+|字段名称       |字段说明         |类型            |必填            |备注     |
+| -------------|:--------------:|:--------------:|:--------------:| ------:|
+|Code||string|Y|-|
+|Message||string|Y|-|
+|Attach||string|Y|-|
+|Level1||string|Y|-|
+|Level2||string|Y|-|
+|Level3||string|Y|-|
+|Level4||string|Y|-|
+|Fpercent||string|Y|-|
+|Success||string|Y|-|
+
