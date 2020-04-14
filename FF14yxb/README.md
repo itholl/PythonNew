@@ -1,4 +1,4 @@
-# FF14[国服]觉醒篇英雄榜查询_官网数据   
+# FF14[国服]觉醒篇英雄榜查询_官网数据   ----  永久同步官网数据，不再更新  
 ## 使用说明
 1.输入角色ID,服务器（按回车） 
 服务器名可以缩写，无需全写也可以（服务器名的任意1-2字即可，注意别输错字）  
@@ -9,9 +9,7 @@
 ## 程序闪退问题  
 说明：如果无法访问英雄榜页面或者服务器输入错误程序会闪退    
 
-## 查询原理  
-1.post fromdata  url：http://act.ff.sdo.com/20180525HeroList/Server/HeroList190128.ashx   
-
+## 英雄榜 
 官方英雄榜查询 http://act.ff.sdo.com/20180525HeroList/index200305.html  
 
 
@@ -26,7 +24,7 @@
 
 ### 3) 接口描述：
 
-* 接口描述详情
+* 接口描述详情 Post Form Data  
 
 ### 4) 请求参数:
 
@@ -34,13 +32,15 @@
 #### POST参数:
 |字段名称       |字段说明         |类型            |必填            |备注     |
 | -------------|:--------------:|:--------------:|:--------------:| ------:|
-|method||string|Y|-|
-|Stage||string|Y|-|
+|method|queryhreodata|string|Y|-|
+|Stage|2|string|Y|-|
 |Name|角色ID|string|Y|-|
 |AreaId|大区ID|string|Y|-|
 |GroupId|服务器ID|string|Y|-|
 
-
+查询大区ID和服务器ID  
+1：view-source:http://act.ff.sdo.com/20180525HeroList/index200305.html  
+2：取字典areaid=" " serverid=" "  
 
 ### 5) 请求返回结果:
 
@@ -63,13 +63,13 @@
 ### 6) 请求返回结果参数说明:
 |字段名称       |字段说明         |类型            |必填            |备注     |
 | -------------|:--------------:|:--------------:|:--------------:| ------:|
-|Code||string|Y|-|
+|Code|查询代码|string|Y|-|
 |Message|消息|string|Y|-|
 |Attach|数组|string|Y|-|
 |Level1|E1S|string|Y|-|
 |Level2|E2S|string|Y|-|
 |Level3|E3S|string|Y|-|
 |Level4|E4S|string|Y|-|
-|Fpercent||string|Y|-|
+|Fpercent|空|string|Y|-|
 |Success|结果|string|Y|-|
 
