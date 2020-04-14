@@ -36,9 +36,9 @@
 | -------------|:--------------:|:--------------:|:--------------:| ------:|
 |method||string|Y|-|
 |Stage||string|Y|-|
-|Name||string|Y|-|
-|AreaId||string|Y|-|
-|GroupId||string|Y|-|
+|Name|角色ID|string|Y|-|
+|AreaId|大区ID|string|Y|-|
+|GroupId|服务器ID|string|Y|-|
 
 
 
@@ -64,12 +64,12 @@
 |字段名称       |字段说明         |类型            |必填            |备注     |
 | -------------|:--------------:|:--------------:|:--------------:| ------:|
 |Code||string|Y|-|
-|Message||string|Y|-|
-|Attach||string|Y|-|
-|Level1||string|Y|-|
-|Level2||string|Y|-|
-|Level3||string|Y|-|
-|Level4||string|Y|-|
+|Message|消息|string|Y|-|
+|Attach|数组|string|Y|-|
+|Level1|E1S|string|Y|-|
+|Level2|E2S|string|Y|-|
+|Level3|E3S|string|Y|-|
+|Level4|E4S|string|Y|-|
 |Fpercent||string|Y|-|
-|Success||string|Y|-|
+|Success|结果|string|Y|-|
 
